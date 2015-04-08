@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F43C6A261AD38589003D91B7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43C6A251AD38589003D91B7 /* SecondViewController.swift */; };
+		F43C6A281AD3B2FD003D91B7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43C6A271AD3B2FD003D91B7 /* ThirdViewController.swift */; };
+		F43C6A2A1AD3C12D003D91B7 /* LessonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43C6A291AD3C12D003D91B7 /* LessonContentView.swift */; };
+		F43C6A2C1AD3C8A8003D91B7 /* VideoPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43C6A2B1AD3C8A8003D91B7 /* VideoPlaybackView.swift */; };
+		F43C6A481AD3D059003D91B7 /* Displacement from Time and Velocity Example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F43C6A2D1AD3C998003D91B7 /* Displacement from Time and Velocity Example.mp4 */; };
+		F449433B1AD45DCE00475899 /* VideoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F449433A1AD45DCE00475899 /* VideoSelectorView.swift */; };
+		F449433D1AD4605A00475899 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F449433C1AD4605A00475899 /* LaunchScreen.png */; };
+		F449433F1AD4615800475899 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F449433E1AD4615800475899 /* LaunchScreen.xib */; };
+		F44943411AD4822D00475899 /* Khan Academy.png in Resources */ = {isa = PBXBuildFile; fileRef = F44943401AD4822D00475899 /* Khan Academy.png */; };
+		F44943431AD482C400475899 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = F44943421AD482C400475899 /* checkbox.png */; };
+		F49CAF381ACB5CCA00B912AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49CAF371ACB5CCA00B912AF /* AppDelegate.swift */; };
+		F49CAF3A1ACB5CCA00B912AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49CAF391ACB5CCA00B912AF /* ViewController.swift */; };
+		F49CAF3D1ACB5CCA00B912AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49CAF3B1ACB5CCA00B912AF /* Main.storyboard */; };
+		F49CAF3F1ACB5CCA00B912AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49CAF3E1ACB5CCA00B912AF /* Images.xcassets */; };
+		F49CAF4E1ACB5CCA00B912AF /* CrowdLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49CAF4D1ACB5CCA00B912AF /* CrowdLearnTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F49CAF481ACB5CCA00B912AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49CAF2A1ACB5CCA00B912AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49CAF311ACB5CCA00B912AF;
+			remoteInfo = CrowdLearn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F43C6A251AD38589003D91B7 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F43C6A271AD3B2FD003D91B7 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F43C6A291AD3C12D003D91B7 /* LessonContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonContentView.swift; sourceTree = "<group>"; };
+		F43C6A2B1AD3C8A8003D91B7 /* VideoPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlaybackView.swift; sourceTree = "<group>"; };
+		F43C6A2D1AD3C998003D91B7 /* Displacement from Time and Velocity Example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Displacement from Time and Velocity Example.mp4"; path = "CrowdLearn/Displacement from Time and Velocity Example.mp4"; sourceTree = "<group>"; };
+		F449433A1AD45DCE00475899 /* VideoSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSelectorView.swift; sourceTree = "<group>"; };
+		F449433C1AD4605A00475899 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchScreen.png; path = CrowdLearn/LaunchScreen.png; sourceTree = "<group>"; };
+		F449433E1AD4615800475899 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../../../../.Trash/LaunchScreen.xib; sourceTree = "<group>"; };
+		F44943401AD4822D00475899 /* Khan Academy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Khan Academy.png"; path = "CrowdLearn/Khan Academy.png"; sourceTree = "<group>"; };
+		F44943421AD482C400475899 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox.png; path = CrowdLearn/checkbox.png; sourceTree = "<group>"; };
+		F49CAF321ACB5CCA00B912AF /* CrowdLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49CAF361ACB5CCA00B912AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49CAF371ACB5CCA00B912AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F49CAF391ACB5CCA00B912AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F49CAF3C1ACB5CCA00B912AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F49CAF3E1ACB5CCA00B912AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F49CAF471ACB5CCA00B912AF /* CrowdLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49CAF4C1ACB5CCA00B912AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49CAF4D1ACB5CCA00B912AF /* CrowdLearnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdLearnTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49CAF2F1ACB5CCA00B912AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49CAF441ACB5CCA00B912AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F49CAF291ACB5CCA00B912AF = {
+			isa = PBXGroup;
+			children = (
+				F44943421AD482C400475899 /* checkbox.png */,
+				F44943401AD4822D00475899 /* Khan Academy.png */,
+				F43C6A2D1AD3C998003D91B7 /* Displacement from Time and Velocity Example.mp4 */,
+				F449433C1AD4605A00475899 /* LaunchScreen.png */,
+				F49CAF341ACB5CCA00B912AF /* CrowdLearn */,
+				F49CAF4A1ACB5CCA00B912AF /* CrowdLearnTests */,
+				F49CAF331ACB5CCA00B912AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F49CAF331ACB5CCA00B912AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49CAF321ACB5CCA00B912AF /* CrowdLearn.app */,
+				F49CAF471ACB5CCA00B912AF /* CrowdLearnTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49CAF341ACB5CCA00B912AF /* CrowdLearn */ = {
+			isa = PBXGroup;
+			children = (
+				F49CAF371ACB5CCA00B912AF /* AppDelegate.swift */,
+				F49CAF391ACB5CCA00B912AF /* ViewController.swift */,
+				F43C6A251AD38589003D91B7 /* SecondViewController.swift */,
+				F43C6A271AD3B2FD003D91B7 /* ThirdViewController.swift */,
+				F43C6A291AD3C12D003D91B7 /* LessonContentView.swift */,
+				F449433A1AD45DCE00475899 /* VideoSelectorView.swift */,
+				F43C6A2B1AD3C8A8003D91B7 /* VideoPlaybackView.swift */,
+				F49CAF3B1ACB5CCA00B912AF /* Main.storyboard */,
+				F49CAF3E1ACB5CCA00B912AF /* Images.xcassets */,
+				F449433E1AD4615800475899 /* LaunchScreen.xib */,
+				F49CAF351ACB5CCA00B912AF /* Supporting Files */,
+			);
+			path = CrowdLearn;
+			sourceTree = "<group>";
+		};
+		F49CAF351ACB5CCA00B912AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49CAF361ACB5CCA00B912AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F49CAF4A1ACB5CCA00B912AF /* CrowdLearnTests */ = {
+			isa = PBXGroup;
+			children = (
+				F49CAF4D1ACB5CCA00B912AF /* CrowdLearnTests.swift */,
+				F49CAF4B1ACB5CCA00B912AF /* Supporting Files */,
+			);
+			path = CrowdLearnTests;
+			sourceTree = "<group>";
+		};
+		F49CAF4B1ACB5CCA00B912AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49CAF4C1ACB5CCA00B912AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F49CAF311ACB5CCA00B912AF /* CrowdLearn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49CAF511ACB5CCA00B912AF /* Build configuration list for PBXNativeTarget "CrowdLearn" */;
+			buildPhases = (
+				F49CAF2E1ACB5CCA00B912AF /* Sources */,
+				F49CAF2F1ACB5CCA00B912AF /* Frameworks */,
+				F49CAF301ACB5CCA00B912AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrowdLearn;
+			productName = CrowdLearn;
+			productReference = F49CAF321ACB5CCA00B912AF /* CrowdLearn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F49CAF461ACB5CCA00B912AF /* CrowdLearnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49CAF541ACB5CCA00B912AF /* Build configuration list for PBXNativeTarget "CrowdLearnTests" */;
+			buildPhases = (
+				F49CAF431ACB5CCA00B912AF /* Sources */,
+				F49CAF441ACB5CCA00B912AF /* Frameworks */,
+				F49CAF451ACB5CCA00B912AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49CAF491ACB5CCA00B912AF /* PBXTargetDependency */,
+			);
+			name = CrowdLearnTests;
+			productName = CrowdLearnTests;
+			productReference = F49CAF471ACB5CCA00B912AF /* CrowdLearnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49CAF2A1ACB5CCA00B912AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = CrowdLearn;
+				TargetAttributes = {
+					F49CAF311ACB5CCA00B912AF = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 4P6KMQS9EW;
+					};
+					F49CAF461ACB5CCA00B912AF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F49CAF311ACB5CCA00B912AF;
+					};
+				};
+			};
+			buildConfigurationList = F49CAF2D1ACB5CCA00B912AF /* Build configuration list for PBXProject "CrowdLearn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F49CAF291ACB5CCA00B912AF;
+			productRefGroup = F49CAF331ACB5CCA00B912AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F49CAF311ACB5CCA00B912AF /* CrowdLearn */,
+				F49CAF461ACB5CCA00B912AF /* CrowdLearnTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49CAF301ACB5CCA00B912AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44943431AD482C400475899 /* checkbox.png in Resources */,
+				F44943411AD4822D00475899 /* Khan Academy.png in Resources */,
+				F449433F1AD4615800475899 /* LaunchScreen.xib in Resources */,
+				F43C6A481AD3D059003D91B7 /* Displacement from Time and Velocity Example.mp4 in Resources */,
+				F449433D1AD4605A00475899 /* LaunchScreen.png in Resources */,
+				F49CAF3D1ACB5CCA00B912AF /* Main.storyboard in Resources */,
+				F49CAF3F1ACB5CCA00B912AF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49CAF451ACB5CCA00B912AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49CAF2E1ACB5CCA00B912AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43C6A261AD38589003D91B7 /* SecondViewController.swift in Sources */,
+				F49CAF3A1ACB5CCA00B912AF /* ViewController.swift in Sources */,
+				F449433B1AD45DCE00475899 /* VideoSelectorView.swift in Sources */,
+				F43C6A2A1AD3C12D003D91B7 /* LessonContentView.swift in Sources */,
+				F43C6A281AD3B2FD003D91B7 /* ThirdViewController.swift in Sources */,
+				F49CAF381ACB5CCA00B912AF /* AppDelegate.swift in Sources */,
+				F43C6A2C1AD3C8A8003D91B7 /* VideoPlaybackView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49CAF431ACB5CCA00B912AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49CAF4E1ACB5CCA00B912AF /* CrowdLearnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F49CAF491ACB5CCA00B912AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49CAF311ACB5CCA00B912AF /* CrowdLearn */;
+			targetProxy = F49CAF481ACB5CCA00B912AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F49CAF3B1ACB5CCA00B912AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F49CAF3C1ACB5CCA00B912AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F49CAF4F1ACB5CCA00B912AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F49CAF501ACB5CCA00B912AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F49CAF521ACB5CCA00B912AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = CrowdLearn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F49CAF531ACB5CCA00B912AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = CrowdLearn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F49CAF551ACB5CCA00B912AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrowdLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowdLearn.app/CrowdLearn";
+			};
+			name = Debug;
+		};
+		F49CAF561ACB5CCA00B912AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrowdLearnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowdLearn.app/CrowdLearn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49CAF2D1ACB5CCA00B912AF /* Build configuration list for PBXProject "CrowdLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49CAF4F1ACB5CCA00B912AF /* Debug */,
+				F49CAF501ACB5CCA00B912AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49CAF511ACB5CCA00B912AF /* Build configuration list for PBXNativeTarget "CrowdLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49CAF521ACB5CCA00B912AF /* Debug */,
+				F49CAF531ACB5CCA00B912AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49CAF541ACB5CCA00B912AF /* Build configuration list for PBXNativeTarget "CrowdLearnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49CAF551ACB5CCA00B912AF /* Debug */,
+				F49CAF561ACB5CCA00B912AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F49CAF2A1ACB5CCA00B912AF /* Project object */;
+}

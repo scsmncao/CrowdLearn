@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0qM-qb-aPq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--CrowdLearn-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrowdLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kz6-6a-rkf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gJN-Vl-18f"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9L7-g2-aXu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kz6-6a-rkf" secondAttribute="trailing" constant="-16" id="Efv-AW-2oh"/>
+                            <constraint firstItem="kz6-6a-rkf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="FYH-J3-VYC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CrowdLearn" id="qIP-Dn-XnA"/>
+                    <connections>
+                        <outlet property="tableView" destination="kz6-6a-rkf" id="aNd-XL-Ykp"/>
+                        <segue destination="Fis-el-3P0" kind="show" identifier="subject" id="R5q-KP-ex9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="387"/>
+        </scene>
+        <!--Lesson Content View-->
+        <scene sceneID="mHY-pG-6g1">
+            <objects>
+                <viewController id="K4k-a4-BEk" customClass="LessonContentView" customModule="CrowdLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="urk-XV-ZKP"/>
+                        <viewControllerLayoutGuide type="bottom" id="fzE-jH-kHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hK1-T9-1vw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gK-Ct-oKy">
+                                <rect key="frame" x="538" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-Q9-ti4">
+                                <rect key="frame" x="16" y="101" width="568" height="351"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Forumla:
+x = ½( v + v0 )t
+
+Where:
+x = displacement
+v = velocity
+v0 = initial velocity
+
+
+The displacement calculator finds the displacement (distance traveled) by an object using its initial and final velocities as well as the time traveled. The average velocity of the object is  multiplied by the time traveled to find the displacement. The equation x = ½( v + v0 )t can be manipulated, as shown below, to find any one of the four values if the other three are known.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wn8-fs-5af">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Practice" id="3s6-Fo-UQN">
+                                        <connections>
+                                            <segue destination="a6A-Ja-41B" kind="show" id="MsI-m5-X8B"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YwE-Eg-xtU"/>
+                                    <barButtonItem title="Video" id="nnQ-up-Mqo">
+                                        <connections>
+                                            <segue destination="PfH-IW-iJ4" kind="show" id="HQc-14-PGJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XP6-Q9-ti4" firstAttribute="top" secondItem="urk-XV-ZKP" secondAttribute="bottom" constant="37" id="5Cd-7f-9LZ"/>
+                            <constraint firstItem="XP6-Q9-ti4" firstAttribute="leading" secondItem="hK1-T9-1vw" secondAttribute="leadingMargin" id="8I8-ad-tB0"/>
+                            <constraint firstItem="wn8-fs-5af" firstAttribute="leading" secondItem="hK1-T9-1vw" secondAttribute="leadingMargin" constant="-16" id="AkB-rT-iLj"/>
+                            <constraint firstItem="XP6-Q9-ti4" firstAttribute="trailing" secondItem="hK1-T9-1vw" secondAttribute="trailingMargin" id="GRN-UB-ydM"/>
+                            <constraint firstItem="fzE-jH-kHZ" firstAttribute="top" secondItem="wn8-fs-5af" secondAttribute="bottom" id="KpR-4k-7Wh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wn8-fs-5af" secondAttribute="trailing" constant="-16" id="LGj-mf-3Ds"/>
+                            <constraint firstItem="wn8-fs-5af" firstAttribute="top" secondItem="XP6-Q9-ti4" secondAttribute="bottom" constant="104" id="jgm-Tg-e79"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textBox" destination="XP6-Q9-ti4" id="Dhr-rz-JbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LuY-3y-spe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3200" y="387"/>
+        </scene>
+        <!--Videos-->
+        <scene sceneID="7GX-AM-bKo">
+            <objects>
+                <viewController title="Videos" id="PfH-IW-iJ4" customClass="VideoSelectorView" customModule="CrowdLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JSR-tu-Hag"/>
+                        <viewControllerLayoutGuide type="bottom" id="EPz-TD-7pF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GIH-ql-I6y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Aw-6w-1GE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PfH-IW-iJ4" id="mn8-rL-0Er"/>
+                                    <outlet property="delegate" destination="PfH-IW-iJ4" id="Vpe-8j-8Gd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Aw-6w-1GE" firstAttribute="leading" secondItem="GIH-ql-I6y" secondAttribute="leadingMargin" constant="-16" id="Obh-5v-a3W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Aw-6w-1GE" secondAttribute="trailing" constant="-16" id="fWv-Da-mca"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="2Aw-6w-1GE" id="Ijl-ff-Y5w"/>
+                        <segue destination="6kr-Y4-oJt" kind="show" identifier="playvideo" id="CB2-9q-Gsq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lcd-mM-LPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3498" y="1157"/>
+        </scene>
+        <!--Video Playback View-->
+        <scene sceneID="66K-2Y-ekf">
+            <objects>
+                <viewController id="6kr-Y4-oJt" customClass="VideoPlaybackView" customModule="CrowdLearn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L6J-JU-tQs"/>
+                        <viewControllerLayoutGuide type="bottom" id="xsW-hr-jHq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5T-nF-9G2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MlW-Mn-mzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3514" y="1864"/>
+        </scene>
+        <!--Practice-->
+        <scene sceneID="xak-UZ-DeI">
+            <objects>
+                <viewController title="Practice" id="a6A-Ja-41B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yUn-Jk-2CJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNQ-nA-7zN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4JH-hB-Kcr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-YD-zGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773" y="1157"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="jVv-Pg-EA0">
+            <objects>
+                <viewController id="OgX-FF-hJg" customClass="ThirdViewController" customModule="CrowdLearn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cMp-OD-7OQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ad-DO-7w2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pfL-7I-N2U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kRA-a0-bxH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OgX-FF-hJg" id="XhX-tC-mXD"/>
+                                    <outlet property="delegate" destination="OgX-FF-hJg" id="Mzb-tO-Adi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kRA-a0-bxH" firstAttribute="leading" secondItem="pfL-7I-N2U" secondAttribute="leadingMargin" constant="-16" id="8d9-cr-eoq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kRA-a0-bxH" secondAttribute="trailing" constant="-16" id="fFF-EO-iKX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kRA-a0-bxH" id="ZFj-Z4-AcF"/>
+                        <segue destination="K4k-a4-BEk" kind="show" identifier="detaillesson" id="4nN-oH-yUw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6i-ZU-jnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2542" y="387"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="gPE-fJ-If1">
+            <objects>
+                <viewController id="Fis-el-3P0" customClass="SecondViewController" customModule="CrowdLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uIY-CT-SWn"/>
+                        <viewControllerLayoutGuide type="bottom" id="CV4-3a-0tQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w5z-OI-ZgP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-Wh-53F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fis-el-3P0" id="hU7-xl-qy8"/>
+                                    <outlet property="delegate" destination="Fis-el-3P0" id="3VF-LO-S04"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zTw-Wh-53F" firstAttribute="leading" secondItem="w5z-OI-ZgP" secondAttribute="leadingMargin" constant="-16" id="sY2-Vx-u0b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zTw-Wh-53F" secondAttribute="trailing" constant="-16" id="sbV-Rp-wtv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="zTw-Wh-53F" id="K8M-Nr-IBd"/>
+                        <segue destination="OgX-FF-hJg" kind="show" identifier="details" id="pq4-sZ-6xa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pB-ls-VZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lpQ-zt-e9Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0qM-qb-aPq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hfV-pD-TtA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="81d-dO-3Lg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQB-fi-WTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="387"/>
+        </scene>
+    </scenes>
+</document>
